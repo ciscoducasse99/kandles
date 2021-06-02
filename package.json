@@ -1,0 +1,25 @@
+{
+  "name": "kandles",
+  "version": "1.0.0",
+  "description": "Ecommerce page for a friend",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "author": "Cisco Ducasse",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "react-transition-group": "^4.4.1"
+  }
+}
