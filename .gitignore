@@ -1,2 +1,3 @@
 server/security
 node_modules
+*.env
